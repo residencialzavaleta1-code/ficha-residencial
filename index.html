@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Residencial Zavaleta</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #e5e7eb;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 380px;
+            background: linear-gradient(180deg, #1f2933, #0f172a);
+            border-radius: 22px;
+            padding: 28px 22px 35px;
+            color: #ffffff;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+        }
+
+        /* Decoración */
+        .card::before {
+            content: "";
+            position: absolute;
+            top: -90px;
+            left: -90px;
+            width: 240px;
+            height: 240px;
+            background: #ffffff;
+            border-radius: 50%;
+            opacity: 0.08;
+        }
+
+        .card::after {
+            content: "";
+            position: absolute;
+            bottom: -70px;
+            right: -70px;
+            width: 200px;
+            height: 200px;
+            background: #ffffff;
+            border-radius: 50%;
+            opacity: 0.05;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 18px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo img {
+            max-width: 130px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 20px;
+            letter-spacing: 1px;
+            margin-bottom: 22px;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item span {
+            display: block;
+            font-size: 12px;
+            color: #9ca3af;
+            margin-bottom: 3px;
+        }
+
+        .item strong {
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        .divider {
+            height: 1px;
+            background: rgba(255,255,255,0.15);
+            margin: 22px 0;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #9ca3af;
+            margin-top: 10px;
+        }
+
+        /* BOTÓN WHATSAPP */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #25D366;
+            color: white;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            z-index: 999;
+        }
+
+        .whatsapp-btn:hover {
+            background: #1ebe5d;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="card">
+
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="https://drive.google.com/uc?id=1ZewS5SayG8w_52_PnmCTASB4PG69CzJK" alt="Residencial Zavaleta">
+        </div>
+
+        <h1>RESIDENCIAL ZAVALETA</h1>
+
+        <div class="item">
+            <span>Celular</span>
+            <strong>221 191 7651</strong>
+        </div>
+
+        <div class="item">
+            <span>Correo electrónico</span>
+            <strong>residencialzavaleta1@gmail.com</strong>
+        </div>
+
+        <div class="item">
+            <span>Horario de atención</span>
+            <strong>Lunes a Viernes · 8:00 – 12:00</strong><br>
+            <strong>Sábados · 10:00 – 12:00</strong>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="item">
+            <span>Banco</span>
+            <strong>Santander</strong>
+        </div>
+
+        <div class="item">
+            <span>Número de cuenta</span>
+            <strong>65510798576</strong>
+        </div>
+
+        <div class="item">
+            <span>CLABE</span>
+            <strong>014650655107985767</strong>
+        </div>
+
+        <div class="footer">
+            Camino Real a Cholula No. 107 · CP 72150
+        </div>
+
+    </div>
+</div>
+
+<!-- BOTÓN WHATSAPP -->
+<a
+    href="https://wa.me/522211917651"
+    class="whatsapp-btn"
+    target="_blank"
+    aria-label="WhatsApp">
+    🟢
+</a>
+
+</body>
+</html>
